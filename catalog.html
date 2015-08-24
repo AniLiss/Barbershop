@@ -5,7 +5,7 @@
     <title>Каталог</title>
 </head>
 <body>
-<header class="mainHeader">
+<header>
 
     <div class="container clearfix">
         <nav class="mainNavigation">
@@ -22,7 +22,7 @@
                 <li>
                     <a href="#">Прайс-лист</a>
                 </li>
-                <li class="active">
+                <li class="activeMenu">
                     <a href="#">Магазин</a>
                 </li>
                 <li>
@@ -39,9 +39,9 @@
 
 <div class="container">
 
-    <section class="catalogHeader">
+    <div class="catalogHeader">
         <h1>Средства для ухода</h1>
-        <nav class="catalogNavigation clearfix">
+        <nav class="breadcrumbs clearfix">
             <ul>
                 <li>
                     <a href="#">Главная</a>
@@ -53,17 +53,15 @@
                 </li>
                 <li>
                     <a href="#">Средства для ухода</a> <!--This link should stay disable-->
-                    <img src="img/rhombus.png" width="10" height="10">
                 </li>
             </ul>
         </nav>
-    </section>
+    </div>
 
     <div class="filterContainer">
-        <section class="filter producers">
+        <form action="/echo" method="post">
+            <section class="filter producers">
             <h2>Производители</h2>
-
-            <form action="/echo" method="post">
                 <label>
                     <input type="checkbox" name="baxterOfCalifornia" value="">Baxter of California
                 </label><br>
@@ -82,13 +80,10 @@
                 <label>
                     <input type="checkbox" name="americanCrew" value="">American Crew
                 </label>
-            </form>
-        </section>
+            </section>
 
         <section class="filter groupOfItems">
             <h2>Группы товаров</h2>
-
-            <form action="/echo" method="post">
                 <label>
                     <input type="radio" name="shavingStuff" value="">Бритвенные приднадлежности
                 </label><br>
@@ -98,73 +93,73 @@
                 <label>
                     <input type="radio" name="accessory" value="">Аксесуары
                 </label>
-            </form>
         </section>
-        <a href="#" class="btn">Показать</a>
+        </form>
+        <input class="btn" type="submit" value="Показать">
     </div>
 
-    <figure class="itemsContainer">
+    <section class="itemsContainer">
         <div class="items">
-            <img src="img/baxterOfCaliforniaSet.png" width="220" height="165" alt="Набор для путешествий">
+            <img src="img/baxterOfCaliforniaSetSmall.png" width="220" height="165" alt="Набор для путешествий">
 
             <p>Набор для путешествий «Baxter of California»</p>
 
             <div class="itemsFooter">
-                2900 руб.<a href="#" class="btn">Купить</a>
+                <span class="price">2900 руб.</span><a href="#" class="btn">Купить</a>
             </div>
         </div>
         <div class="items">
-            <img src="img/baxteOfCaliforniaConditioner.png" width="220" height="165" alt="Увлажняющий кондиционер">
+            <img src="img/baxteOfCaliforniaConditionerSmall.png" width="220" height="165" alt="Увлажняющий кондиционер">
 
             <p>Увлажняющий кондиционер «Baxter of California»</p>
 
             <div class="itemsFooter">
-                750 руб.<a href="#" class="btn">Купить</a>
+                <span class="price">750 руб.</span><a href="#" class="btn">Купить</a>
             </div>
         </div>
         <div class="items">
-            <img src="img/sauvecitoHairGel.png" width="220" height="165" alt="Гель для волос">
+            <img src="img/sauvecitoHairGelSmall.png" width="220" height="165" alt="Гель для волос">
 
             <p>Гель для волос «Sauvecito»</p>
 
             <div class="itemsFooter">
-                290 руб.<a href="#" class="btn">Купить</a>
+                <span class="price">290 руб.</span><a href="#" class="btn">Купить</a>
             </div>
         </div>
         <div class="items">
-            <img src="img/americanCrewClay.png" width="220" height="165" alt="Глина для укладки волос">
+            <img src="img/americanCrewClaySmall.png" width="220" height="165" alt="Глина для укладки волос">
 
             <p>Глина для укладки волос «AmericanCrew»</p>
 
             <div class="itemsFooter">
-                500 руб.<a href="#" class="btn">Купить</a>
+                <span class="price">500 руб.</span><a href="#" class="btn">Купить</a>
             </div>
         </div>
         <div class="items">
-            <img src="img/americanCrewGel.png" width="220" height="165" alt="Гель для волос">
+            <img src="img/americanCrewGelSmall.png" width="220" height="165" alt="Гель для волос">
 
             <p>Гель для волос «AmericanCrew»</p>
 
             <div class="itemsFooter">
-                300 руб.<a href="#" class="btn">Купить</a>
+                <span class="price">300 руб.</span><a href="#" class="btn">Купить</a>
             </div>
         </div>
         <div class="items">
-            <img src="img/baxteOfCalifornia.png" width="220" height="165" alt="Набор для бритья">
+            <img src="img/baxteOfCaliforniaSmall.png" width="220" height="165" alt="Набор для бритья">
 
             <p>Набор для бритья «Baxter of California»</p>
 
             <div class="itemsFooter">
-                3 900 руб.<a href="#" class="btn">Купить</a>
+                <span class="price">3 900 руб.</span><a href="#" class="btn">Купить</a>
             </div>
         </div>
-        <div class="catalogPages">
-            <a href="#">1</a>
-            <a href="#">2</a>
-            <a href="#">3</a>
-            <a href="#">4</a>
-        </div>
-    </figure>
+    </section>
+    <div class="pagination">
+    <a href="#">1</a>
+    <a href="#" class="activePage">2</a>
+    <a href="#">3</a>
+    <a href="#">4</a>
+</div>
 </div>
 
 <footer class="mainFooter">
@@ -183,7 +178,7 @@
         </section>
 
         <section class="footerCopyright">
-            <p>Дизайн сайта:</p>
+            <p>Разработано:</p>
             <a href="#" class="btn">htmlacademy.ru</a>
         </section>
     </div>
