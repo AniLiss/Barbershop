@@ -1,0 +1,23 @@
+body {
+    font-size: 14px;
+    line-height: 24px;
+    color: #f7f4f1;
+    font-weight: bold;
+    font-family: "PT Sans Narrow Bold";
+}
+
+h2 {
+    font-size: 30px;
+    line-height: normal;
+    color: #000000;
+    font-weight: bold;
+    font-family: "PT Sans Narrow Bold";
+}
+
+.mainNavigation {
+    font-size: 16px;
+    line-height: normal;
+    color: #ffffff;
+    font-weight: bold;
+    font-family: "PT Sans Narrow Bold";
+}
