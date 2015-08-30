@@ -1,23 +1,89 @@
+/*for index mainly*/
 body {
     font-size: 14px;
     line-height: 24px;
-    color: #f7f4f1;
-    font-weight: bold;
-    font-family: "PT Sans Narrow Bold";
-}
-
-h2 {
-    font-size: 30px;
-    line-height: normal;
     color: #000000;
-    font-weight: bold;
-    font-family: "PT Sans Narrow Bold";
+    font-family: "PT Sans Narrow Bold", "Arial Regular", sant-serif;
 }
 
 .mainNavigation {
     font-size: 16px;
     line-height: normal;
     color: #ffffff;
-    font-weight: bold;
-    font-family: "PT Sans Narrow Bold";
+}
+
+.featuresTitle {
+    font-size: 30px;
+    line-height: normal;
+    color: #f7f4f1;
+}
+
+.featuresItem p {
+    font-size: 14px;
+    line-height: normal;
+    color: #f7f4f1;
+}
+
+h2 {
+    font-size: 30px;
+    line-height: normal;
+}
+
+time {
+    font-family: "PT Sans Narrow Regular", "Arial Narrow", sant-serif;
+}
+
+.btn {
+    color: #ffffff;
+    line-height: normal;
+}
+
+footer {
+    color: #ffffff;
+    line-height: normal;
+}
+
+/*for catalog*/
+
+h3 {
+    font-size: 24px;
+    line-height: normal;
+}
+
+.catalogHeader {
+    line-height: normal;
+}
+
+.breadcrumbs li:last-child {
+    color: #aba9a7;
+}
+
+.filterContainer {
+    line-height: normal;
+}
+
+.itemsContainer {
+    line-height: normal;
+}
+
+.item a {
+    line-height: 18px;
+}
+
+.pagination {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+/*for catalogItem*/
+.descriptionHeader {
+    line-height: normal;
+}
+
+.presence {
+    color: #aeaeae;
+}
+
+.price {
+    line-height: normal;
 }
