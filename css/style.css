@@ -81,10 +81,272 @@ h3 {
     line-height: normal;
 }
 
-.presence {
+.article {
     color: #aeaeae;
 }
 
 .price {
     line-height: normal;
+}
+
+/*======================================
+ positioning elements index
+=======================================*/
+
+header {
+    padding: 5px 0;
+}
+
+.container {
+    width: 940px;
+    margin: 0 auto;
+}
+
+.mainNavigation {
+    margin-left: 19px;
+    width: 650px;
+    float: left;
+    min-height: 62px; /* 12px letters' height*/
+}
+
+.userBlock {
+    margin-right: 22px;
+    width: 66px;
+    float: right;
+    min-height: 62px; /* 12px letters height*/
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.mainContainer {
+    margin: 20px auto;
+}
+
+.logo {
+    margin: 0;
+    width: 368px;
+    margin: 0 auto;
+    margin-bottom: 26px;
+}
+
+.featuresRow {
+    margin-top: 40px; /*до круто*/
+    margin-bottom: 86px;
+}
+
+.featuresItem {
+    width: 284px;
+    float: left;
+    margin-right: 24px;
+}
+
+.featuresItem:last-child {
+    margin-right: 0;
+}
+
+.indexContent {
+    padding: 55px 81px 72px 81px;
+}
+
+.containerColumnLeft {
+    float: left;
+}
+
+.containerColumnRight {
+    float: right;
+}
+
+.containerColumnLeft, .containerColumnRight {
+    width: 323px;
+}
+
+.mainFooter {
+    margin-top: 47px; /* было 64   +17 в IndexContent*/
+    padding-top: 60px;
+    padding-bottom: 41px;
+}
+
+.footerContacts {
+    width: 309px;
+    float: left;
+    margin-right: 91px;
+}
+
+.footerSocial {
+    width: 141px;
+    float: left;
+}
+
+.footerCopyright {
+    width: 140px;
+    float: right;
+}
+
+/*======================================
+ positioning elements catalog
+=======================================*/
+.catalogHeader {
+    margin-top: 39px;
+    margin-bottom: 30px;
+    width: 301px;
+}
+
+.catalogHeader h2 {
+    margin: 0;
+}
+
+.catalogHeader .breadcrumbs {
+    /* margin-top: 54px; from the top letter "Средства для ухода" till the top of "Главная"*/
+}
+
+.filterContainer {
+    margin-top: 33px;
+    width: 180px; /*real max-width: 168 Why?*/
+    float: left;
+
+}
+
+.filterContainer h3 {
+    margin-top: 0;
+    margin-bottom: 34px;
+
+}
+
+.filter {
+    margin-bottom: 52px;
+}
+
+.itemsContainer {
+    margin-top: 33px;
+    margin-bottom: 114px;
+    width: 700px;
+    float: left;
+    margin-left: 50px; /* 75 in real*/
+    margin-right: 0;
+
+}
+
+.pagination {
+    margin-top: 45px;
+}
+
+/*======================================
+ *positioning elements catalogItem
+=======================================*/
+.catalogItemHeader {
+    width: 615px; /* в макете 591px*/
+    margin-top: 35px;
+    margin-bottom: 30px;
+}
+
+.catalogItemHeader h2 {
+    margin: 0;
+}
+
+.content {
+    padding-top: 17px;
+}
+
+.minorPics img {
+    margin-right: 16px;
+}
+
+.minorPics img:last-child {
+    margin-right: 0;
+}
+
+.gallery {
+    float: left;
+}
+
+.descriptionItem {
+    width: 415px; /* in real 379px;*/
+    float: right;
+}
+
+.descriptionHeader {
+    margin-top: 13px;
+}
+
+.article {
+    float: right;
+}
+
+/*======================================
+ Системное оформление - не изменять
+=======================================*/
+
+.gl0, .gl1, .gl2, .gl3 {
+    position: relative;
+}
+
+.gl0:before, .gl1:before, .gl2:before, .gl3:before {
+    content: '';
+    position: absolute;
+    left: -1px;
+    top: 0;
+    height: 20px;
+    padding: 2px 5px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 20px;
+    font-family: "Courier New", monotype;
+    white-space: nowrap;
+}
+
+.gl0 {
+    border: 2px solid blue;
+    background: rgba(0, 0, 255, .1);
+}
+
+.gl0:before {
+    color: #fff;
+    background: rgba(0, 0, 255, .9);
+}
+
+.gl1 {
+    border: 2px solid green;
+    background: rgba(0, 128, 0, .1);
+}
+
+.gl1:before {
+    color: #fff;
+    background: rgba(0, 128, 0, .9);
+}
+
+.gl2 {
+    border: 2px solid rgb(255, 45, 82);
+    background: rgba(255, 45, 82, .1);
+}
+
+.gl2:before {
+    color: #fff;
+    background: rgba(255, 45, 82, .9);
+}
+
+.gl3 {
+    border: 2px solid rgb(234, 255, 45);
+    background: rgba(234, 255, 45, .1);
+}
+
+.gl3:before {
+    color: #000;
+    background: rgba(234, 255, 45, .8);
+}
+
+.main-header:before {
+    content: '.main-header';
+}
+
+.main-header *:before {
+    top: auto;
+    bottom: -25px;
+}
+
+.container:before {
+    content: '.container';
 }
